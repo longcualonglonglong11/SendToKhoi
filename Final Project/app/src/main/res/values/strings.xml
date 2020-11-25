@@ -1,0 +1,150 @@
+<resources>
+    <string-array name="category_arr">
+        <item>Whole house</item>
+        <item>Dormitory</item>
+        <item>Hostel</item>
+        <item>One Storey House</item>
+        <item>Two Storey House</item>
+    </string-array>
+    <string-array name="city_array">
+        <item>Cả nước</item>
+        <item>Cần Thơ</item>
+        <item>Đà Nẵng</item>
+        <item>Hải Phòng</item>
+        <item>Hà Nội</item>
+        <item>Thành phố Hồ Chí Minh</item>
+        <item>An Giang</item>
+        <item>Bà Rịa - Vũng Tàu</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Định</item>
+        <item>Bình Dương</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cao Bằng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Long An</item>
+        <item>Nam Định</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Tiền Giang</item>
+        <item>Trà Vinh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+        <item>Vĩnh Phúc</item>
+        <item>Yên Bái</item>
+        <item>Phú Yên</item>
+    </string-array>
+    <string-array name="hcm_district">
+        <item>All</item>
+        <item>Quận 1</item>
+        <item>Quận 12</item>
+        <item>Thủ Đức</item>
+        <item>Quận 9</item>
+        <item>Gò Vấp</item>
+        <item>Bình Thạnh</item>
+        <item>Tân Bình</item>
+        <item>Tân Phú</item>
+        <item>Phú Nhuận</item>
+        <item>Quận 2</item>
+        <item>Quận 3</item>
+        <item>Quận 10</item>
+        <item>Quận 11</item>
+        <item>Quận 4</item>
+        <item>Quận 5</item>
+        <item>Quận 6</item>
+        <item>Quận 8</item>
+        <item>Bình Tân</item>
+        <item>Quận 7</item>
+        <item>Củ Chi</item>
+        <item>Hóc Môn</item>
+        <item>Bình Chánh</item>
+        <item>Nhà Bè</item>
+        <item>Cần Giờ</item>
+    </string-array>
+    <string name="app_name">HelperApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="your_name">Your name</string>
+    <string name="finish">Finish</string>
+    <string name="already_had_an_account_login_here">Already had an account! Login here.</string>
+    <string name="email">Email</string>
+    <string name="sms">SMS</string>
+    <string name="call">CALL</string>
+    <string name="close">CLOSE</string>
+    <string name="complete">COMPLETE</string>
+    <string name="direct">DIRECT</string>
+    <string name="emergency_level">Emergency Level</string>
+    <string name="location">Location</string>
+    <string name="phone">Phone</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="detail_about_this_request">DETAIL ABOUT THIS REQUEST</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+    <string name="createform">createForm</string>
+    <string name="aaaaaaaaa">AAAAAAAAA</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string name="choose_current_location">Choose current location</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="ACCESS_TOKEN">\?access_token=pk.eyJ1IjoiYmFvZGlodXluaCIsImEiOiJja2R2bXppcmcwbTg5MnhwaWRuamlydzQ4In0.a639pSpb46FG8W-ByrCx3g</string>
+    <string name="MAPBOX_URL">https://api.mapbox.com/directions/v5/mapbox/driving/</string>
+    <string name="route">routes</string>
+    <string name="geometry">geometry</string>
+    <string name="colorPolyLine">#F40808</string>
+    <string name="capturedLocation">This location has already captured</string>
+    <string name="split_sign_email">\@</string>
+    <string name="number_new_req"> NEW REQUEST UPDATE NEAR YOU !</string>
+    <string name="ADRESS_NOT_FOUND">CAN\'T FIND THIS LOCATION line 901</string>
+    <string name="no_string">Nothing to search!</string>
+    <string name="no_address">Can\'t find!</string>
+    <string name="on_respone">On respone line 636</string>
+    <string name="request_url_err">error when request line 642</string>
+    <string name="cur_date_err">Line 771: can\'t get current time</string>
+    <string name="price">Price</string>
+    <string name="available_house">Available house</string>
+    <string name="my_house">My houses</string>
+    <string name="choose_price_range">Choose price range:</string>
+</resources>

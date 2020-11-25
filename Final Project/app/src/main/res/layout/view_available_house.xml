@@ -1,0 +1,248 @@
+<ScrollView
+    android:id="@+id/scrollView_available_house"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="5dp"
+                        app:cardElevation="0dp"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/button_filterResult"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:onClick="option_view_available_house"
+                            android:src="@drawable/search_icon"
+                            />
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageButton
+                            android:id="@+id/close_form"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="#fff"
+                            android:backgroundTint="#FF1100"
+                            android:onClick="close_view_available_house"
+                            android:src="@drawable/close_24"
+                            android:tint="#fff" />
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout_Selection"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkbox_myhouselist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#8BC34A"
+                    android:padding="5dp"
+                    android:text="@string/my_house"
+                    android:textColor="#8BC34A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/choose_price_range"
+                        android:textColor="#8BC34A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/textViewRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingStart="10dp"
+                        android:textColor="#F44336"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <it.sephiroth.android.library.rangeseekbar.RangeSeekBar
+                    android:id="@+id/rangeSeekBar"
+                    style="@style/Sephiroth.Widget.RangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:max="100"
+                    app:range_progress_endValue="100"
+                    app:range_seekbar_stepSize="1"
+                    app:range_progress_startEnd_minDiff="1"
+                    app:range_progress_startValue="0"
+                    tools:ignore="RtlHardcoded" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Province/City: "
+                        android:textColor="#8BC34A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <Spinner
+                        android:id="@+id/option_city"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city_textView"
+                        android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/district_layout"
+                    android:visibility="gone"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="District: "
+                        android:textColor="#8BC34A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <Spinner
+                        android:id="@+id/option_district"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/district_textView"
+                        android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="6dp"
+                    android:layout_gravity="end">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="20dp">
+                        <Button
+                            android:id="@+id/button_viewHouse_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:backgroundTint="#F44336"
+                            android:onClick="close_option_view_available_house"
+                            android:text="@string/cancel"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="20dp">
+                        <Button
+                            android:id="@+id/button_done_view_house_option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:backgroundTint="#3F51B5"
+                            android:onClick="Done_view_house_option"
+                            android:text="Done"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:id="@+id/title_available_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="cursive"
+                    android:text="Available house:"
+                    android:textAlignment="center"
+                    android:textFontWeight="1000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listView_available_house"
+                    />
+    </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+</ScrollView>
